@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { NavLink, withRouter } from "react-router-dom";
 
 class Header extends React.Component {
@@ -22,7 +22,11 @@ class Header extends React.Component {
         </React.Fragment>
       );
     }
-    return <NavLink to="/sign_up">Créer un compte</NavLink>;
+    return (
+      <Fragment>
+        <NavLink to="/sign_up">Créer un compte</NavLink>
+      </Fragment>
+    );
   }
   render() {
     return (
