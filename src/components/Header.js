@@ -32,6 +32,9 @@ class Header extends React.Component {
           <li>
             <NavLink to="/">Home</NavLink>
           </li>
+          <li>
+            <NavLink to="/LogIn">Log in</NavLink>
+          </li>
           {this.renderNav()}
         </ul>
         <hr />
